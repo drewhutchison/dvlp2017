@@ -33,7 +33,7 @@ class Panel(object):
     inclusionwidth = 17500
 
     # nominal height in rack units
-    nU = 5
+    nU = 4
 
     # allow 1/32in slop
     height = 1750 * nU - 31
@@ -55,6 +55,12 @@ class Panel(object):
         '''
         self.clusters.append(SpdtSuperCluster(self.X + x, self.Y - y))
 
+    def addDpdtSuperCluster(self, x, y):
+        '''
+        x and y relative llh panel corner, y upward
+        '''
+        self.clusters.append(DpdtSupercluster(self.X + x, self.Y - y))
+
     def drawExclusionAreas(self, addable):
         for cluster in self.clusters:
             cluster.addExclusions(addable)
@@ -73,6 +79,8 @@ p = Panel()
 p.drawFrame(g)
 
 p.addSpdtSuperCluster(1000, 100)
+p.addDpdtSuperCluster(9000, 100)
+p.addDpdtSuperCluster(9000, 3500)
 p.drawExclusionAreas(g)
 
 dwg.add(g)
