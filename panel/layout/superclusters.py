@@ -6,7 +6,7 @@ class Supercluster(object):
         for c in self.clusters:
             c.addExclusions(addable)
 
-class SpdtSuperCluster(Supercluster):
+class SpdtSupercluster(Supercluster):
 
     hpad = 1000
 

@@ -49,13 +49,13 @@ class Panel(object):
             (self.X + (self.fullwidth-self.inclusionwidth)/2, self.Y-self.height), 
             (self.X + self.inclusionwidth, self.height)))
 
-    def addSpdtSuperCluster(self, x, y):
+    def addSpdtSupercluster(self, x, y):
         '''
         x and y relative llh panel corner, y upward
         '''
-        self.clusters.append(SpdtSuperCluster(self.X + x, self.Y - y))
+        self.clusters.append(SpdtSupercluster(self.X + x, self.Y - y))
 
-    def addDpdtSuperCluster(self, x, y):
+    def addDpdtSupercluster(self, x, y):
         '''
         x and y relative llh panel corner, y upward
         '''
@@ -78,9 +78,9 @@ p = Panel()
 
 p.drawFrame(g)
 
-p.addSpdtSuperCluster(1000, 100)
-p.addDpdtSuperCluster(9000, 100)
-p.addDpdtSuperCluster(9000, 3500)
+p.addSpdtSupercluster(1000, 100)
+p.addDpdtSupercluster(9000, 100)
+p.addDpdtSupercluster(9000, 3500)
 p.drawExclusionAreas(g)
 
 dwg.add(g)
