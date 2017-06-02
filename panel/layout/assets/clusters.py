@@ -1,3 +1,5 @@
+import svgwrite
+
 from components import *
 
 class Cluster(object):
@@ -7,7 +9,9 @@ class Cluster(object):
             addable.add(c.excludedElement)
 
     def addBoundBox(self, addable):
-        addable.add(self.bbox)
+        g = svgwrite.container.Group(class_=self.__class__.__name__)
+        g.add(self.bbox)
+        addable.add(g)
 
     addBoundboxes = addBoundBox
 

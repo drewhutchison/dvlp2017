@@ -15,7 +15,7 @@ from assets import Panel
 WIDTH = 21
 HEIGHT = 14
 
-# Default style, will be moved
+# Default style
 STYLE = '''
     stroke: black;
     stroke-width: 10;
@@ -34,12 +34,18 @@ def get_panel():
     return p
 
 
+##dwg = svgwrite.Drawing('test.svg', 
+##        size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
+##        profile='full',
+##        style=STYLE)
+
 dwg = svgwrite.Drawing('test.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
-        profile='full',
-        style=STYLE)
+        profile='full')
 
 dwg.viewbox(width=int(WIDTH*1000), height=int(HEIGHT*1000))
+
+dwg.add_stylesheet('default.css', 'default')
 
 g = svgwrite.container.Group()
 
