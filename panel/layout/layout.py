@@ -27,8 +27,8 @@ def get_panel():
     p = Panel()
 
     p.addSpdtSupercluster(1000, 100)
-    p.addDpdtSupercluster(9000, 100)
-    p.addDpdtSupercluster(9000, 3500)
+    p.addDpdtSupercluster(9000, 100, 6)
+    p.addInvertedDpdtSupercluster(15000, 2500, 2)
     p.addMC(1000, 3500)
 
     return p

@@ -91,10 +91,53 @@ class DpdtCluster(Cluster):
             (x, y-self.height),
             (Jack.r_exclude * 4 + self.hpad, self.height))
         
+class DpdtInvertedCluster(Cluster):
+
+    hpad = 100
+    vpad = 100
+
+    # TODO top element spacing might change
+    height = Jack.r_exclude * 8 + vpad * 3
+    width = Jack.r_exclude * 4 + hpad
+
+    def __init__(self, x, y, name='unnamed'):
+
+        v_centerline1 = x + Jack.r_exclude
+        v_centerline2 = x + Jack.r_exclude * 3 + self.hpad
+        h_baseline = y
+
+        self.components = [
+            Jack((v_centerline1 + v_centerline2)/2,
+                h_baseline - Jack.r_exclude,
+                name+'COIL'),
+            Jack(v_centerline1,
+                h_baseline - Jack.r_exclude * 3 - self.vpad,
+                name+'.NC1'),
+            Jack(v_centerline1,
+                h_baseline - Jack.r_exclude * 5 - self.vpad * 2,
+                name+'.NO1'),
+            Jack(v_centerline1,
+                h_baseline - Jack.r_exclude * 7 - self.vpad * 3,
+                name+'.COM1'),
+            Jack(v_centerline2,
+                h_baseline - Jack.r_exclude * 3 - self.vpad,
+                name+'.NC2'),
+            Jack(v_centerline2,
+                h_baseline - Jack.r_exclude * 5 - self.vpad * 2,
+                name+'.NO2'),
+            Jack(v_centerline2,
+                h_baseline - Jack.r_exclude * 7 - self.vpad * 3,
+                name+'.COM2'),
+        ]
+
+        self.bbox = shapes.Rect(
+            (x, y-self.height),
+            (Jack.r_exclude * 4 + self.hpad, self.height))
+        
 class McCluster(Cluster):
 
-    width = 1000
-    height = 1000
+    width = 2000
+    height = 4000
 
     def __init__(self, x, y):
 

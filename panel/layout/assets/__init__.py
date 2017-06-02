@@ -30,17 +30,23 @@ class Panel(object):
             (self.X + (self.fullwidth-self.inclusionwidth)/2, self.Y-self.height), 
             (self.X + self.inclusionwidth, self.height)))
 
-    def addSpdtSupercluster(self, x, y):
+    def addSpdtSupercluster(self, x, y, N=None):
         '''
         x and y relative llh panel corner, y upward
         '''
-        self.clusters.append(superclusters.SpdtSupercluster(self.X + x, self.Y - y))
+        self.clusters.append(superclusters.SpdtSupercluster(self.X + x, self.Y - y, N))
 
-    def addDpdtSupercluster(self, x, y):
+    def addDpdtSupercluster(self, x, y, N=None):
         '''
         x and y relative llh panel corner, y upward
         '''
-        self.clusters.append(superclusters.DpdtSupercluster(self.X + x, self.Y - y))
+        self.clusters.append(superclusters.DpdtSupercluster(self.X + x, self.Y - y, N))
+
+    def addInvertedDpdtSupercluster(self, x, y, N=None):
+        '''
+        x and y relative llh panel corner, y upward
+        '''
+        self.clusters.append(superclusters.DpdtInvertedSupercluster(self.X + x, self.Y - y, N))
 
     def addMC(self, x, y):
         self.clusters.append(superclusters.McCluster(self.X + x, self.Y - y))
