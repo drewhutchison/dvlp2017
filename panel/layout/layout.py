@@ -8,7 +8,7 @@ Dimensions in thousandths of an inch except where noted.
 
 import svgwrite
 
-from superclusters import *
+from assets import Panel
 
 # Drawing size
 # These in inches
@@ -22,56 +22,18 @@ STYLE = '''
     fill-opacity: 0;
 '''
 
-class Panel(object):
+def get_panel():
 
-    # hardcoded lower-left-hand-corner origin in user coords
-    X = 1000
-    Y = 9000
-    
-    # hardcoded width figures
-    fullwidth = 19000
-    inclusionwidth = 17500
+    p = Panel()
 
-    # nominal height in rack units
-    nU = 4
+    p.addSpdtSupercluster(1000, 100)
+    p.addDpdtSupercluster(9000, 100)
+    p.addDpdtSupercluster(9000, 3500)
+    p.addMC(1000, 3500)
 
-    # allow 1/32in slop
-    height = 1750 * nU - 31
+    return p
 
-    def __init__(self):
-        self.clusters = []
 
-    def drawFrame(self, addable):
-        addable.add(svgwrite.shapes.Rect(
-            (self.X, self.Y-self.height), 
-            (self.X + self.fullwidth, self.height)))
-        addable.add(svgwrite.shapes.Rect(
-            (self.X + (self.fullwidth-self.inclusionwidth)/2, self.Y-self.height), 
-            (self.X + self.inclusionwidth, self.height)))
-
-    def addSpdtSupercluster(self, x, y):
-        '''
-        x and y relative llh panel corner, y upward
-        '''
-        self.clusters.append(SpdtSupercluster(self.X + x, self.Y - y))
-
-    def addDpdtSupercluster(self, x, y):
-        '''
-        x and y relative llh panel corner, y upward
-        '''
-        self.clusters.append(DpdtSupercluster(self.X + x, self.Y - y))
-
-    def addMC(self, x, y):
-        self.clusters.append(McCluster(self.X + x, self.Y - y))
-
-    def drawExclusionAreas(self, addable):
-        for cluster in self.clusters:
-            cluster.addExclusions(addable)
-    
-    def drawBoundboxes(self, addable):
-        for cluster in self.clusters:
-            cluster.addBoundboxes(addable)
-    
 dwg = svgwrite.Drawing('test.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
         profile='full',
@@ -81,14 +43,9 @@ dwg.viewbox(width=int(WIDTH*1000), height=int(HEIGHT*1000))
 
 g = svgwrite.container.Group()
 
-p = Panel()
+p = get_panel()
 
 p.drawFrame(g)
-
-p.addSpdtSupercluster(1000, 100)
-p.addDpdtSupercluster(9000, 100)
-p.addDpdtSupercluster(9000, 3500)
-p.addMC(1000, 3500)
 p.drawExclusionAreas(g)
 p.drawBoundboxes(g)
 

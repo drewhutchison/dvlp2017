@@ -11,7 +11,6 @@ class Component(object):
 
     @property
     def excludedElement(self):
-        print self.x, self.y, self.name
         return shapes.Circle((self.x, self.y), self.r_exclude)
 
     @property
