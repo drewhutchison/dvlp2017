@@ -61,9 +61,16 @@ class Panel(object):
         '''
         self.clusters.append(DpdtSupercluster(self.X + x, self.Y - y))
 
+    def addMC(self, x, y):
+        self.clusters.append(McCluster(self.X + x, self.Y - y))
+
     def drawExclusionAreas(self, addable):
         for cluster in self.clusters:
             cluster.addExclusions(addable)
+    
+    def drawBoundboxes(self, addable):
+        for cluster in self.clusters:
+            cluster.addBoundboxes(addable)
     
 dwg = svgwrite.Drawing('test.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
@@ -81,7 +88,9 @@ p.drawFrame(g)
 p.addSpdtSupercluster(1000, 100)
 p.addDpdtSupercluster(9000, 100)
 p.addDpdtSupercluster(9000, 3500)
+p.addMC(1000, 3500)
 p.drawExclusionAreas(g)
+p.drawBoundboxes(g)
 
 dwg.add(g)
 

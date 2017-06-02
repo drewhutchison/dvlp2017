@@ -9,6 +9,8 @@ class Cluster(object):
     def addBoundBox(self, addable):
         addable.add(self.bbox)
 
+    addBoundboxes = addBoundBox
+
 class SpdtCluster(Cluster):
     '''this should originate from the bottom left-hand corner of the 
     bottommost jack's padded area'''
@@ -16,12 +18,13 @@ class SpdtCluster(Cluster):
     hpad = 50
     vpad = 100
 
+    height = Jack.r_exclude * 8 + vpad * 3
+    width = Jack.r_exclude * 2
+
     def __init__(self, x, y, name='unnamed'):
 
         v_centerline = x + Jack.r_exclude
         h_baseline = y
-
-        height = Jack.r_exclude * 8 + self.vpad * 3
 
         self.components = [
             Jack(v_centerline, 
@@ -39,23 +42,23 @@ class SpdtCluster(Cluster):
         ]
 
         self.bbox = shapes.Rect(
-            (x, y-height),
-            (Jack.r_exclude * 2, height))
+            (x, y-self.height),
+            (Jack.r_exclude * 2, self.height))
 
 class DpdtCluster(Cluster):
 
     hpad = 100
     vpad = 100
 
+    # TODO top element spacing might change
+    height = Jack.r_exclude * 8 + vpad * 3
+    width = Jack.r_exclude * 4 + hpad
+
     def __init__(self, x, y, name='unnamed'):
 
         v_centerline1 = x + Jack.r_exclude
         v_centerline2 = x + Jack.r_exclude * 3 + self.hpad
         h_baseline = y
-
-        # TODO top element spacing might change
-
-        height = Jack.r_exclude * 8 + self.vpad * 3
 
         self.components = [
             Jack(v_centerline1,
@@ -81,6 +84,20 @@ class DpdtCluster(Cluster):
         ]
 
         self.bbox = shapes.Rect(
-            (x, y-height),
-            (Jack.r_exclude * 4 + self.hpad, height))
+            (x, y-self.height),
+            (Jack.r_exclude * 4 + self.hpad, self.height))
         
+class McCluster(Cluster):
+
+    width = 1000
+    height = 1000
+
+    def __init__(self, x, y):
+
+        self.bbox = shapes.Rect(
+            (x, y-self.height),
+            (self.width, self.height)
+        )
+
+    def addExclusions(self, addable):
+        return self.addBoundBox(addable)
