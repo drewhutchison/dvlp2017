@@ -21,3 +21,15 @@ class Jack(Component):
     r_exclude = 770/2
     r_mask = 591/2
 
+class Switch(Component):
+    '''NKK M2015SS1W01, Jameco part no 2258777'''
+
+    r_mask = 315/2
+    height = 512
+    width = 311
+
+    @property
+    def excludedElement(self):
+        return shapes.Rect((self.x - self.width/2, self.y - self.width/2),
+                (self.width, self.height))
+

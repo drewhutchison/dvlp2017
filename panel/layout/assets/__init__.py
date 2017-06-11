@@ -51,6 +51,12 @@ class Panel(object):
     def addMC(self, x, y):
         self.clusters.append(superclusters.McCluster(self.X + x, self.Y - y))
 
+    def addSwitchSupercluster(self, x, y, N=None):
+        self.clusters.append(superclusters.SwitchSupercluster(self.X + x, self.Y - y))
+
+    def addHTiepointCluster(self, x, y, name="unnamed"):
+        self.clusters.append(clusters.HTiepointCluster(self.X + x, self.Y - y, name))
+
     def drawExclusionAreas(self, addable):
         for cluster in self.clusters:
             cluster.addExclusions(addable)

@@ -66,3 +66,20 @@ class DpdtInvertedSupercluster(Supercluster):
                 SpdtCluster.height)
         )
 
+class SwitchSupercluster(Supercluster):
+
+    hpad = 100
+
+    defaultN = 4
+
+    def __init__(self, x, y, N=None):
+        N = N if N else self.defaultN
+        self.clusters = [
+            SwitchCluster(x + (i*2)*(SwitchCluster.width/2) + self.hpad*i, y)
+            for i in range(N)
+        ]
+
+        self.bbox = shapes.Rect(
+            (x, y-SwitchCluster.height),
+            ((N*SwitchCluster.width + (N-1)*self.hpad), SwitchCluster.height)
+        )

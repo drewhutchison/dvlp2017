@@ -137,7 +137,9 @@ class DpdtInvertedCluster(Cluster):
 class McCluster(Cluster):
 
     width = 2000
-    height = 4000
+    height = 3000
+
+    vpad = 100
 
     def __init__(self, x, y):
 
@@ -148,3 +150,45 @@ class McCluster(Cluster):
 
     def addExclusions(self, addable):
         return self.addBoundBox(addable)
+
+class SwitchCluster(Cluster):
+
+    vpad = 100
+    
+    width = Jack.r_exclude * 2
+    height = Jack.r_exclude * 6 + Switch.height + vpad*3
+
+    def __init__(self, x, y, name='unnamed'):
+        v_centerline = x + Jack.r_exclude
+
+        self.components = [
+            Jack(v_centerline, y - Jack.r_exclude, name + '.NC'),
+            Jack(v_centerline, y - Jack.r_exclude*3 - self.vpad, name + '.NO'),
+            Jack(v_centerline, y - Jack.r_exclude*5 - self.vpad*2, name + '.COM'),
+            Switch(v_centerline,
+                   y - Jack.r_exclude*6 - self.vpad*4 - Switch.height/2, name)
+        ]
+
+        self.bbox = shapes.Rect(
+            (x, y-self.height),
+            (self.width, self.height))
+
+class HTiepointCluster(Cluster):
+
+    hpad = 100
+
+    def __init__(self, x, y, name):
+
+        h_centerline = y - Jack.r_exclude
+
+        self.components = [
+            Jack(x + Jack.r_exclude, h_centerline, name + '.NORM'),
+            Jack(x + Jack.r_exclude*3 + self.hpad, h_centerline, name + '.2'),
+            Jack(x + Jack.r_exclude*5 + self.hpad*2, h_centerline, name + '.3'),
+            Jack(x + Jack.r_exclude*7 + self.hpad*3, h_centerline, name + '.4'),
+        ]
+
+        self.bbox = shapes.Rect(
+            (x, y - Jack.r_exclude*2),
+            (8*Jack.r_exclude + 3*self.hpad, Jack.r_exclude*2)
+        )
