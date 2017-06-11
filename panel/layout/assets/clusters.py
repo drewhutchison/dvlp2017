@@ -53,9 +53,10 @@ class DpdtCluster(Cluster):
 
     hpad = 100
     vpad = 100
+    vpad_iso = hpad * .866
 
     # TODO top element spacing might change
-    height = Jack.r_exclude * 8 + vpad * 3
+    height = Jack.r_exclude * 8 + vpad * 2 + vpad_iso
     width = Jack.r_exclude * 4 + hpad
 
     def __init__(self, x, y, name='unnamed'):
@@ -84,21 +85,21 @@ class DpdtCluster(Cluster):
                 h_baseline - Jack.r_exclude * 5 - self.vpad * 2,
                 name+'.COM2'),
             Jack((v_centerline1 + v_centerline2)/2,
-                h_baseline - Jack.r_exclude * 7 - self.vpad * 3)
+                h_baseline - Jack.r_exclude * 7 - self.vpad * 2)
         ]
 
         self.bbox = shapes.Rect(
             (x, y-self.height),
             (Jack.r_exclude * 4 + self.hpad, self.height))
         
-class DpdtInvertedCluster(Cluster):
+class DpdtInvertedCluster(DpdtCluster):
 
-    hpad = 100
-    vpad = 100
-
-    # TODO top element spacing might change
-    height = Jack.r_exclude * 8 + vpad * 3
-    width = Jack.r_exclude * 4 + hpad
+##    hpad = 100
+##    vpad = 100
+##
+##    # TODO top element spacing might change
+##    height = Jack.r_exclude * 8 + vpad * 3
+##    width = Jack.r_exclude * 4 + hpad
 
     def __init__(self, x, y, name='unnamed'):
 
@@ -111,22 +112,22 @@ class DpdtInvertedCluster(Cluster):
                 h_baseline - Jack.r_exclude,
                 name+'COIL'),
             Jack(v_centerline1,
-                h_baseline - Jack.r_exclude * 3 - self.vpad,
+                h_baseline - Jack.r_exclude * 3 - self.vpad_iso,
                 name+'.NC1'),
             Jack(v_centerline1,
-                h_baseline - Jack.r_exclude * 5 - self.vpad * 2,
+                h_baseline - Jack.r_exclude * 5 - self.vpad * 1 - self.vpad_iso,
                 name+'.NO1'),
             Jack(v_centerline1,
-                h_baseline - Jack.r_exclude * 7 - self.vpad * 3,
+                h_baseline - Jack.r_exclude * 7 - self.vpad * 2 - self.vpad_iso,
                 name+'.COM1'),
             Jack(v_centerline2,
-                h_baseline - Jack.r_exclude * 3 - self.vpad,
+                h_baseline - Jack.r_exclude * 3 - self.vpad_iso,
                 name+'.NC2'),
             Jack(v_centerline2,
-                h_baseline - Jack.r_exclude * 5 - self.vpad * 2,
+                h_baseline - Jack.r_exclude * 5 - self.vpad * 1 - self.vpad_iso,
                 name+'.NO2'),
             Jack(v_centerline2,
-                h_baseline - Jack.r_exclude * 7 - self.vpad * 3,
+                h_baseline - Jack.r_exclude * 7 - self.vpad * 2 - self.vpad_iso,
                 name+'.COM2'),
         ]
 

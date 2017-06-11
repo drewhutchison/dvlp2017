@@ -21,6 +21,10 @@ class Jack(Component):
     r_exclude = 770/2
     r_mask = 591/2
 
+class Lamp(Component):
+    r_exclude = 960/2
+    r_mask = 814/2
+
 class Switch(Component):
     '''NKK M2015SS1W01, Jameco part no 2258777'''
 
