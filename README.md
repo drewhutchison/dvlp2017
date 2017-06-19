@@ -8,7 +8,7 @@ quickly configure and demonstrate the circuits to be discussed, as well as for
 exploration of other circuits at a more leisurely pace.
 
 This repository will contain design files for the demonstration unit and the
-[http://imakewebthings.com/deck.js/](deck.js)-based presentation slides.
+[deck.js](http://imakewebthings.com/deck.js/)-based presentation slides.
 
 # Abstract
 
