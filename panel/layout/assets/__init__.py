@@ -63,6 +63,10 @@ class Panel(object):
     def drawExclusionAreas(self, addable):
         for cluster in self.clusters:
             cluster.addExclusions(addable)
+
+    def drawMaskAreas(self, addable):
+        for cluster in self.clusters:
+            cluster.addMasks(addable)
     
     def drawBoundboxes(self, addable):
         for cluster in self.clusters:

@@ -8,6 +8,10 @@ class Cluster(object):
         for c in self.components:
             addable.add(c.excludedElement)
 
+    def addMasks(self, addable):
+        for c in self.components:
+            addable.add(c.maskedElement)
+
     def addBoundBox(self, addable):
         g = svgwrite.container.Group(class_=self.__class__.__name__)
         g.add(self.bbox)
@@ -144,6 +148,9 @@ class McCluster(Cluster):
 
     def __init__(self, x, y):
 
+        # TODO this obvs garbage
+        self.components = []
+
         self.bbox = shapes.Rect(
             (x, y-self.height),
             (self.width, self.height)
@@ -167,7 +174,7 @@ class SwitchCluster(Cluster):
             Jack(v_centerline, y - Jack.r_exclude*3 - self.vpad, name + '.NO'),
             Jack(v_centerline, y - Jack.r_exclude*5 - self.vpad*2, name + '.COM'),
             Switch(v_centerline,
-                   y - Jack.r_exclude*6 - self.vpad*4 - Switch.height/2, name)
+                   y - Jack.r_exclude*6 - self.vpad*3 - Switch.height/2, name)
         ]
 
         self.bbox = shapes.Rect(

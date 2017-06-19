@@ -34,6 +34,9 @@ class Switch(Component):
 
     @property
     def excludedElement(self):
-        return shapes.Rect((self.x - self.width/2, self.y - self.width/2),
+        return shapes.Rect((self.x - self.width/2, self.y - self.height/2),
                 (self.width, self.height))
 
+    @property
+    def maskedElement(self):
+        return shapes.Circle((self.x, self.y), self.r_mask)

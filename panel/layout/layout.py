@@ -59,6 +59,7 @@ p = get_panel()
 
 p.drawFrame(g)
 p.drawExclusionAreas(g)
+p.drawMaskAreas(g)
 ##p.drawBoundboxes(g)
 
 dwg.add(g)

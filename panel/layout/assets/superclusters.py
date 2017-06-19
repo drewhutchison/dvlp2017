@@ -8,6 +8,10 @@ class Supercluster(object):
         for c in self.clusters:
             c.addExclusions(addable)
 
+    def addMasks(self, addable):
+        for c in self.clusters:
+            c.addMasks(addable)
+
     def addBoundboxes(self, addable):
 
         addable.add(self.bbox)
