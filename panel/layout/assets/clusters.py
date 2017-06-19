@@ -193,3 +193,24 @@ class HTiepointCluster(Cluster):
             (x, y - Jack.r_exclude*2),
             (8*Jack.r_exclude + 3*self.hpad, Jack.r_exclude*2)
         )
+
+class LampCluster(Cluster):
+
+    vpad = 100
+
+    height = Lamp.r_exclude * 2 + Jack.r_exclude * 2 + vpad
+    width = 2*Lamp.r_exclude
+
+    def __init__(self, x, y, name):
+
+        v_centerline = x + Lamp.r_exclude
+
+        self.components = [
+            Lamp(v_centerline, y - Jack.r_exclude*2 - self.vpad - Lamp.r_exclude),
+            Jack(v_centerline, y - Jack.r_exclude)
+        ]
+
+        self.bbox = shapes.Rect(
+            (x, y - self.height),
+            (Lamp.r_exclude*2, self.height)
+        )

@@ -57,6 +57,9 @@ class Panel(object):
     def addHTiepointCluster(self, x, y, name="unnamed"):
         self.clusters.append(clusters.HTiepointCluster(self.X + x, self.Y - y, name))
 
+    def addLampSupercluster(self, x, y, name="unnamed"):
+        self.clusters.append(superclusters.LampSupercluster(self.X + x, self.Y - y))
+
     def drawExclusionAreas(self, addable):
         for cluster in self.clusters:
             cluster.addExclusions(addable)

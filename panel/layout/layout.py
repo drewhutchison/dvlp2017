@@ -32,6 +32,7 @@ def get_panel():
     p.addMC(1000, 3700)
     p.addSwitchSupercluster(3500, 3700)
     p.addHTiepointCluster(7000, 3700)
+    p.addLampSupercluster(10000, 5000)
 
     return p
 
