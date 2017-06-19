@@ -27,12 +27,15 @@ def get_panel():
     p = Panel()
 
     p.addSpdtSupercluster(1000, 100)
-    p.addDpdtSupercluster(9000, 100, 6)
-    p.addInvertedDpdtSupercluster(15000, 3300, 2)
+    p.addDpdtSupercluster(8300, 100, 2)
+##    p.addInvertedDpdtSupercluster(15000, 3300, 22
+    p.addDpdtSupercluster(12000, 100, 4)
+    p.addDpdtSupercluster(12000, 3520, 4)
     p.addMC(1000, 3700)
-    p.addSwitchSupercluster(3500, 3700)
-    p.addHTiepointCluster(7000, 3700)
-    p.addLampSupercluster(10000, 5000)
+    p.addSwitchSupercluster(3200, 3700)
+    p.addHTiepointCluster(8300, 3500)
+    p.addHTiepointCluster(8300, 4350)
+    p.addLampSupercluster(7500, 5000)
 
     return p
 
@@ -56,7 +59,7 @@ p = get_panel()
 
 p.drawFrame(g)
 p.drawExclusionAreas(g)
-p.drawBoundboxes(g)
+##p.drawBoundboxes(g)
 
 dwg.add(g)
 

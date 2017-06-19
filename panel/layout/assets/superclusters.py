@@ -17,7 +17,7 @@ class Supercluster(object):
 
 class SpdtSupercluster(Supercluster):
 
-    hpad = 100
+    hpad = 120
 
     def __init__(self, x, y, N=None):
         N = N if N else self.defaultN
@@ -34,7 +34,7 @@ class SpdtSupercluster(Supercluster):
 
 class DpdtSupercluster(Supercluster):
 
-    hpad = 100
+    hpad = 180
 
     def __init__(self, x, y, N=None):
         N = N if N else self.defaultN
@@ -68,7 +68,7 @@ class DpdtInvertedSupercluster(Supercluster):
 
 class SwitchSupercluster(Supercluster):
 
-    hpad = 100
+    hpad = 200
 
     defaultN = 4
 
