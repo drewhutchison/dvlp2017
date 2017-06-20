@@ -40,3 +40,11 @@ class Switch(Component):
     @property
     def maskedElement(self):
         return shapes.Circle((self.x, self.y), self.r_mask)
+
+class Keyswitch(Component):
+    r_exclude = 1081/2
+    r_mask = 868/2
+
+class Fuse(Component):
+    r_exclude = 760/2
+    r_mask = 760/2

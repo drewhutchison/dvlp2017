@@ -147,17 +147,21 @@ class McCluster(Cluster):
     vpad = 100
 
     def __init__(self, x, y):
+        v_centerline = x + self.width/2
 
-        # TODO this obvs garbage
-        self.components = []
+        self.components = [
+            Fuse(v_centerline, y - Fuse.r_exclude),
+            Lamp(v_centerline, y - Fuse.r_exclude*2 - self.vpad - Lamp.r_exclude, "pilot"),
+            Keyswitch(v_centerline, y - Fuse.r_exclude*2 - self.vpad*2 - Lamp.r_exclude*2 - Keyswitch.r_exclude, "power")
+        ]
 
         self.bbox = shapes.Rect(
             (x, y-self.height),
             (self.width, self.height)
         )
 
-    def addExclusions(self, addable):
-        return self.addBoundBox(addable)
+##    def addExclusions(self, addable):
+##        return self.addBoundBox(addable)
 
 class SwitchCluster(Cluster):
 
