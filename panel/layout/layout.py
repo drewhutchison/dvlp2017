@@ -31,11 +31,11 @@ def get_panel():
 ##    p.addInvertedDpdtSupercluster(15000, 3300, 22
     p.addDpdtSupercluster(12000, 100, 4)
     p.addDpdtSupercluster(12000, 3520, 4)
-    p.addMC(1000, 3700)
-    p.addSwitchSupercluster(3200, 3700)
+    p.addMC(600, 3700)
+    p.addSwitchSupercluster(2660, 3700)
     p.addHTiepointCluster(8300, 3500)
     p.addHTiepointCluster(8300, 4350)
-    p.addLampSupercluster(7500, 5000)
+    p.addLampSupercluster(7255, 5000)
 
     return p
 
@@ -45,7 +45,7 @@ def get_panel():
 ##        profile='full',
 ##        style=STYLE)
 
-dwg = svgwrite.Drawing('test.svg', 
+dwg = svgwrite.Drawing('panel-final.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
         profile='full')
 
