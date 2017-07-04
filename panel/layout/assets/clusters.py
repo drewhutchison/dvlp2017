@@ -150,6 +150,7 @@ class McCluster(Cluster):
     height = 3000
 
     vpad = 100
+    keyswitch_pad = 40
 
     def __init__(self, x, y):
         v_centerline = x + self.width/2
@@ -157,7 +158,7 @@ class McCluster(Cluster):
         self.components = [
             Fuse(v_centerline, y - Fuse.r_exclude),
             Lamp(v_centerline, y - Fuse.r_exclude*2 - self.vpad - Lamp.r_exclude, "pilot"),
-            Keyswitch(v_centerline, y - Fuse.r_exclude*2 - self.vpad*2 - Lamp.r_exclude*2 - Keyswitch.r_exclude, "power")
+            Keyswitch(v_centerline, y - Fuse.r_exclude*2 - self.vpad*2 - Lamp.r_exclude*2 - Keyswitch.r_exclude - self.keyswitch_pad, "power")
         ]
 
         self.bbox = shapes.Rect(
@@ -171,6 +172,7 @@ class McCluster(Cluster):
 class SwitchCluster(Cluster):
 
     vpad = 100
+    switch_pad = 60
     
     width = Jack.r_exclude * 2
     height = Jack.r_exclude * 6 + Switch.height + vpad*3
@@ -183,7 +185,7 @@ class SwitchCluster(Cluster):
             Jack(v_centerline, y - Jack.r_exclude*3 - self.vpad, name + '.NO'),
             Jack(v_centerline, y - Jack.r_exclude*5 - self.vpad*2, name + '.COM'),
             Switch(v_centerline,
-                   y - Jack.r_exclude*6 - self.vpad*3 - Switch.height/2, name)
+                   y - Jack.r_exclude*6 - self.vpad*3 - Switch.height/2 - self.switch_pad, name)
         ]
 
         self.bbox = shapes.Rect(

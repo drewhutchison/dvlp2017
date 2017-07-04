@@ -27,13 +27,12 @@ def get_panel():
     p = Panel()
 
     p.addSpdtSupercluster(1000, 100)
-    p.addDpdtSupercluster(12000, 100, 4)
-    p.addDpdtSupercluster(12000, 3520, 4)
-    p.addMC(600, 3700)
-    p.addSwitchSupercluster(2660, 3700)
-    p.addHTiepointCluster(8300, 3500)
-    p.addHTiepointCluster(8300, 4350)
-    p.addLampSupercluster(7255, 5000)
+    p.addDpdtSupercluster(10900, 100, 4)
+    p.addDpdtSupercluster(10900, 3520, 4)
+    p.addMC(500, 3700)
+    p.addSwitchSupercluster(2225, 3670)
+    p.addLampSupercluster(6155, 5000)
+    p.addDpdtSupercluster(8700, 100, 1)
 
     return p
 
