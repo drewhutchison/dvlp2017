@@ -213,8 +213,8 @@ class HTiepointCluster(Cluster):
 class LampCluster(Cluster):
 
     vpad = 100
-    jack_hoffs = 600
-    jack_voffs = 200
+    jack_hoffs = 0
+    jack_voffs = 0
 
     height = Lamp.r_exclude * 2 + Jack.r_exclude * 2 + vpad
     width = 2*Lamp.r_exclude
