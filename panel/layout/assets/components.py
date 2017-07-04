@@ -1,13 +1,27 @@
 from svgwrite import shapes
 
+NaN = float('NaN')
+
 class Component(object):
     r_exclude = None
     r_mask = None
+    panel_offset_x = NaN
+    panel_offset_y = NaN
 
     def __init__(self, x, y, name='unnamed'):
         self.x = x
         self.y = y
         self.name = name
+
+    def __str__(self):
+        return '{} instance "{}" at ({},{}) [drawing], ({}, {}) [panel]'.format(
+            self.__class__.__name__,
+            self.name,
+            self.x,
+            self.y,
+            self.x - self.panel_offset_x,
+            self.panel_offset_y - self.y
+        )
 
     @property
     def excludedElement(self):

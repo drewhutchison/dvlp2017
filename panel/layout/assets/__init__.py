@@ -9,6 +9,8 @@ class Panel(object):
     X = 1000
     Y = 9000
     
+    superclusters.set_panel_offset(X, Y)
+
     # hardcoded width figures
     fullwidth = 19000
     inclusionwidth = 17500
@@ -22,13 +24,17 @@ class Panel(object):
     def __init__(self):
         self.clusters = []
 
+    def __str__(self):
+        return ('Panel composed of: \n\t' +
+                '\n\t'.join([str(cluster) for cluster in self.clusters]))
+
     def drawFrame(self, addable):
         addable.add(svgwrite.shapes.Rect(
             (self.X, self.Y-self.height), 
-            (self.X + self.fullwidth, self.height)))
+            (self.fullwidth, self.height)))
         addable.add(svgwrite.shapes.Rect(
             (self.X + (self.fullwidth-self.inclusionwidth)/2, self.Y-self.height), 
-            (self.X + self.inclusionwidth, self.height)))
+            (self.inclusionwidth, self.height)))
 
     def addSpdtSupercluster(self, x, y, N=None):
         '''

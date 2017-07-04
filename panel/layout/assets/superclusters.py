@@ -1,8 +1,17 @@
 from clusters import *
 
+def set_panel_offset(x, y):
+    Component.panel_offset_x = x
+    Component.panel_offset_y = y
+
 class Supercluster(object):
 
     defaultN = 8
+
+    def __str__(self):
+        return ('\n{} composed of\n' +
+                '\n\t'.join([str(cluster) for cluster in self.clusters])
+                ).format(self.__class__.__name__)
 
     def addExclusions(self, addable):
         for c in self.clusters:

@@ -4,6 +4,11 @@ from components import *
 
 class Cluster(object):
 
+    def __str__(self):
+        return ('\n{} composed of:\n\n\t' +
+                '\n\t'.join([str(component) for component in self.components])
+                ).format(self.__class__.__name__)
+
     def addExclusions(self, addable):
         for c in self.components:
             addable.add(c.excludedElement)

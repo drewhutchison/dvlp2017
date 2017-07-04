@@ -65,3 +65,5 @@ p.drawMaskAreas(g)
 dwg.add(g)
 
 dwg.save()
+
+print p
