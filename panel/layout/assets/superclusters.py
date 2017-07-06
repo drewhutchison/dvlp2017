@@ -32,10 +32,12 @@ class SpdtSupercluster(Supercluster):
 
     hpad = 120
 
-    def __init__(self, x, y, N=None):
+    def __init__(self, x, y, N=None, start=1):
         N = N if N else self.defaultN
         self.clusters = [
-                SpdtCluster(x + (i*(SpdtCluster.width+self.hpad)), y)
+                SpdtCluster(x + (i*(SpdtCluster.width+self.hpad)),
+                    y,
+                    'R{}'.format(start + i))
                 for i in range (N)
         ]
 
@@ -49,10 +51,12 @@ class DpdtSupercluster(Supercluster):
 
     hpad = 180
 
-    def __init__(self, x, y, N=None):
+    def __init__(self, x, y, N=None, start=1, label='R'):
         N = N if N else self.defaultN
         self.clusters = [
-            DpdtCluster(x + (i*(DpdtCluster.width+self.hpad)), y)
+            DpdtCluster(x + (i*(DpdtCluster.width+self.hpad)),
+                y,
+                '{}{}'.format(label, start+i))
             for i in range(N)
         ]
 
@@ -85,10 +89,12 @@ class SwitchSupercluster(Supercluster):
 
     defaultN = 4
 
-    def __init__(self, x, y, N=None):
+    def __init__(self, x, y, N=None, start=1):
         N = N if N else self.defaultN
         self.clusters = [
-            SwitchCluster(x + i*SwitchCluster.width + self.hpad*i, y)
+            SwitchCluster(x + i*SwitchCluster.width + self.hpad*i,
+                y,
+                'S{}'.format(start + i))
             for i in range(N)
         ]
 

@@ -17,9 +17,9 @@ HEIGHT = 14
 
 # Default style
 STYLE = '''
-    stroke: black;
-    stroke-width: 10;
-    fill-opacity: 0;
+    stroke: none;
+    fill-opacity: 1;
+    fill: blue;
 '''
 
 def get_panel():
@@ -27,12 +27,12 @@ def get_panel():
     p = Panel()
 
     p.addSpdtSupercluster(1890, 100)
-    p.addDpdtSupercluster(10900, 100, 4)
-    p.addDpdtSupercluster(10900, 3520, 4)
+    p.addDpdtSupercluster(10900, 100, 4, start=13)
+    p.addDpdtSupercluster(10900, 3520, 4, start=9)
     p.addMC(500, 3700)
     p.addSwitchSupercluster(2225, 3670)
     p.addLampSupercluster(6155, 5000)
-    p.addDpdtSupercluster(9075, 100, 1)
+    p.addDpdtSupercluster(9075, 100, 1, start=1, label='TR')
     p.addVTiepointCluster(984, 3045)
 
     return p
@@ -43,7 +43,7 @@ def get_panel():
 ##        profile='full',
 ##        style=STYLE)
 
-dwg = svgwrite.Drawing('panel-final-revised.svg', 
+dwg = svgwrite.Drawing('panel-final-revised-mask-fills.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
         profile='full',
         style=STYLE)
@@ -57,7 +57,7 @@ g = svgwrite.container.Group()
 p = get_panel()
 
 p.drawFrame(g)
-p.drawExclusionAreas(g)
+##p.drawExclusionAreas(g)
 p.drawMaskAreas(g)
 ##p.drawBoundboxes(g)
 

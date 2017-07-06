@@ -42,11 +42,15 @@ class Panel(object):
         '''
         self.clusters.append(superclusters.SpdtSupercluster(self.X + x, self.Y - y, N))
 
-    def addDpdtSupercluster(self, x, y, N=None):
+    def addDpdtSupercluster(self, x, y, N=None, start=1, label='R'):
         '''
         x and y relative llh panel corner, y upward
         '''
-        self.clusters.append(superclusters.DpdtSupercluster(self.X + x, self.Y - y, N))
+        self.clusters.append(superclusters.DpdtSupercluster(self.X + x,
+            self.Y - y,
+            N,
+            start=start,
+            label=label))
 
     def addInvertedDpdtSupercluster(self, x, y, N=None):
         '''

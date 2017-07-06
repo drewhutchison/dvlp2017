@@ -51,7 +51,7 @@ class SpdtCluster(Cluster):
                 name+'.COM'),
             Jack(v_centerline, 
                 h_baseline - Jack.r_exclude * 7 - self.vpad * 3,
-                name+'.COIL')
+                name)
         ]
 
         self.bbox = shapes.Rect(
@@ -94,7 +94,8 @@ class DpdtCluster(Cluster):
                 h_baseline - Jack.r_exclude * 5 - self.vpad * 2,
                 name+'.COM2'),
             Jack((v_centerline1 + v_centerline2)/2,
-                h_baseline - Jack.r_exclude * 7 - self.vpad * 2)
+                h_baseline - Jack.r_exclude * 7 - self.vpad * 2,
+                name)
         ]
 
         self.bbox = shapes.Rect(

@@ -34,7 +34,8 @@ class Component(object):
     def maskedElement(self):
         return shapes.Circle((self.x, self.y),
                 self.r_mask,
-                class_='mask {}'.format(self.__class__.__name__)
+                class_='mask {}'.format(self.__class__.__name__),
+                id=self.name
                 )
 
 class Jack(Component):
