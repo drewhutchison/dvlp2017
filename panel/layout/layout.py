@@ -33,6 +33,7 @@ def get_panel():
     p.addSwitchSupercluster(2225, 3670)
     p.addLampSupercluster(6155, 5000)
     p.addDpdtSupercluster(9075, 100, 1)
+    p.addVTiepointCluster(984, 3045)
 
     return p
 

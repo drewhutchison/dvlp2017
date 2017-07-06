@@ -63,6 +63,9 @@ class Panel(object):
     def addHTiepointCluster(self, x, y, name="unnamed"):
         self.clusters.append(clusters.HTiepointCluster(self.X + x, self.Y - y, name))
 
+    def addVTiepointCluster(self, x, y, name="unnamed"):
+        self.clusters.append(clusters.VTiepointCluster(self.X + x, self.Y - y, name))
+
     def addLampSupercluster(self, x, y, name="unnamed"):
         self.clusters.append(superclusters.LampSupercluster(self.X + x, self.Y - y))
 

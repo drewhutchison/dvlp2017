@@ -212,6 +212,19 @@ class HTiepointCluster(Cluster):
             (8*Jack.r_exclude + 3*self.hpad, Jack.r_exclude*2)
         )
 
+class VTiepointCluster(Cluster):
+
+    vpad = 100
+
+    def __init__(self, x, y, name):
+
+        v_centerline = x + Jack.r_exclude
+
+        self.components = [
+            Jack(v_centerline, y + Jack.r_exclude),
+            Jack(v_centerline, y + Jack.r_exclude*3 + self.vpad)
+        ]
+
 class LampCluster(Cluster):
 
     vpad = 100
