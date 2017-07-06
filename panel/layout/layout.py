@@ -43,13 +43,14 @@ def get_panel():
 ##        profile='full',
 ##        style=STYLE)
 
-dwg = svgwrite.Drawing('panel-final.svg', 
+dwg = svgwrite.Drawing('panel-final-revised.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
-        profile='full')
+        profile='full',
+        style=STYLE)
 
 dwg.viewbox(width=int(WIDTH*1000), height=int(HEIGHT*1000))
 
-dwg.add_stylesheet('default.css', 'default')
+##dwg.add_stylesheet('default.css', 'default')
 
 g = svgwrite.container.Group()
 

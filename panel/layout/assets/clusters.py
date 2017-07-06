@@ -222,7 +222,7 @@ class VTiepointCluster(Cluster):
 
         self.components = [
             Jack(v_centerline, y + Jack.r_exclude),
-            Jack(v_centerline, y + Jack.r_exclude*3 + self.vpad)
+            Jack(v_centerline, y + Jack.r_exclude*5 + self.vpad*2)
         ]
 
 class LampCluster(Cluster):
