@@ -25,11 +25,17 @@ class Component(object):
 
     @property
     def excludedElement(self):
-        return shapes.Circle((self.x, self.y), self.r_exclude)
+        return shapes.Circle((self.x, self.y),
+                self.r_exclude, 
+                class_='exclusion {}'.format(self.__class__.__name__)
+                )
 
     @property
     def maskedElement(self):
-        return shapes.Circle((self.x, self.y), self.r_mask)
+        return shapes.Circle((self.x, self.y),
+                self.r_mask,
+                class_='mask {}'.format(self.__class__.__name__)
+                )
 
 class Jack(Component):
     r_exclude = 770/2
@@ -49,11 +55,16 @@ class Switch(Component):
     @property
     def excludedElement(self):
         return shapes.Rect((self.x - self.width/2, self.y - self.height/2),
-                (self.width, self.height))
+                (self.width, self.height),
+                class_='exclusion {}'.format(self.__class__.__name__)
+                )
 
     @property
     def maskedElement(self):
-        return shapes.Circle((self.x, self.y), self.r_mask)
+        return shapes.Circle((self.x, self.y), 
+                self.r_mask,
+                class_='mask {}'.format(self.__class__.__name__)
+                )
 
 class Keyswitch(Component):
     r_exclude = 1081/2
