@@ -172,7 +172,7 @@ class McCluster(Cluster):
 class SwitchCluster(Cluster):
 
     vpad = 100
-    switch_pad = 60
+    switch_pad = 3
     
     width = Jack.r_exclude * 2
     height = Jack.r_exclude * 6 + Switch.height + vpad*3
