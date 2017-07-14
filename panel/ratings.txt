@@ -1,0 +1,14 @@
+Fuse rating determined as follows:
+
+Timing relay is Omron H3Y-2 12V, coil rated at 75mA.
+SPDT relay bank is Electronics Salon MD-D228T/12V-1, 400mA all on
+DPDT relay bank is Electronics Salon MD-D261T/12V-1, 240mA all on
+Lamps are #53, GS-3.5 w/ BA9S base. 120mA @ 14.4V, 5 ea. = 600mA all on
+
+1315 mA total => 1.5A fuse, 1.25 x .25 in.
+
+Contact ratings:
+
+DPDT relay bank contacts are 120VAC/500mA, 24VDC 1A
+SPDT relay bank contacts are 250VAC/10A, 30VDC 10A
+Timing relay is 250VAC 5A
