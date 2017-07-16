@@ -1,0 +1,107 @@
+body {
+  font-family: "Berthold Akzidenz Grotesk";
+}
+
+section.slide {
+  width: 100%;
+}
+
+h1 {
+  font-stretch: expanded;
+  font-weight: bold;
+  font-size: 4.5em;
+}
+
+h1, .vcenter {
+  text-align: center;
+}
+
+h2 {
+  margin-left: 48pt;
+  font-size: 48pt;
+}
+
+/* title-slide specific stuff */
+
+.title {
+  background-image: url("../assets/img/title_bg.jpg");
+  background-size: cover;
+}
+
+.title div {
+    background-color: rgba(255,255,255,0.85);
+    width: 70%;
+    float: right;
+    margin: 10%;
+    text-align: right;
+}
+
+.title h1 {
+  margin: 5%;
+  margin-bottom: 0%;
+  text-align: right;
+}
+
+.title hr {
+  width: 40%;
+  border-width: .15em;
+  border-style: solid;
+  color: black;
+  margin-right: 13em;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.title h2 {
+  font-size: 2.5em;
+  margin: 1%;
+  margin-right: 5%;
+  font-weight: lighter;
+}
+
+.title h3 {
+  font-size: 2em;
+  font-family: Courier;
+  margin: 5%;
+  margin-top: 0;
+  font-weight: lighter;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Section intros */
+
+#s1 {
+  background-image: url("../assets/img/s1_bg.jpg");
+  background-size: cover;
+}
+
+#s1 > div {
+  margin-left: 10%;
+  background-color: rgba(255,255,255,0.85);
+}
+
+#s1 h1 {
+  text-align: left;
+  margin-left: 1em;
+  padding-top: .2em;
+}
+
+/* before/after section */
+
+div.beforeafter {
+  display: flex;
+  margin: 0 0 10% 10%;
+}
+
+div.beforepic {
+  flex: 0 0 50%;
+}
+
+div.afterpic {
+  flex: 1;
+}
+
+div.beforeafter img {
+  width: 80%;
+}
