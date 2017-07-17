@@ -84,6 +84,10 @@ class Panel(object):
     def drawBoundboxes(self, addable):
         for cluster in self.clusters:
             cluster.addBoundboxes(addable)
+
+    def drawLabels(self, addable):
+        for cluster in self.clusters:
+            cluster.addLabels(addable)
     
 __all__ = [
     'Panel'

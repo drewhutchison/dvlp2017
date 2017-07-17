@@ -1,4 +1,4 @@
-from svgwrite import shapes
+from svgwrite import shapes, text
 
 NaN = float('NaN')
 
@@ -37,6 +37,13 @@ class Component(object):
                 class_='mask {}'.format(self.__class__.__name__),
                 id=self.name
                 )
+
+    @property
+    def textElement(self):
+        return text.Text(self.name,
+                (self.x, self.y),
+                font_size=150,
+                font_family='monospace')
 
 class Jack(Component):
     r_exclude = 770/2

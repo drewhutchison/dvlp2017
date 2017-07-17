@@ -56,10 +56,11 @@ g = svgwrite.container.Group()
 
 p = get_panel()
 
-p.drawFrame(g)
+##p.drawFrame(g)
 ##p.drawExclusionAreas(g)
-p.drawMaskAreas(g)
+##p.drawMaskAreas(g)
 ##p.drawBoundboxes(g)
+p.drawLabels(g)
 
 dwg.add(g)
 

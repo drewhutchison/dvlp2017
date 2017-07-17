@@ -22,6 +22,10 @@ class Cluster(object):
         g.add(self.bbox)
         addable.add(g)
 
+    def addLabels(self, addable):
+        for c in self.components:
+            addable.add(c.textElement)
+
     addBoundboxes = addBoundBox
 
 class SpdtCluster(Cluster):
@@ -186,7 +190,7 @@ class SwitchCluster(Cluster):
             Jack(v_centerline, y - Jack.r_exclude*3 - self.vpad, name + '.NO'),
             Jack(v_centerline, y - Jack.r_exclude*5 - self.vpad*2, name + '.COM'),
             Switch(v_centerline,
-                   y - Jack.r_exclude*6 - self.vpad*3 - Switch.height/2 - self.switch_pad, name)
+                   y - Jack.r_exclude*6 - self.vpad*3 - Switch.height/2 - self.switch_pad)
         ]
 
         self.bbox = shapes.Rect(

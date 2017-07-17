@@ -28,6 +28,10 @@ class Supercluster(object):
         for c in self.clusters:
             c.addBoundBox(addable)
 
+    def addLabels(self, addable):
+        for c in self.clusters:
+            c.addLabels(addable)
+
 class SpdtSupercluster(Supercluster):
 
     hpad = 120
