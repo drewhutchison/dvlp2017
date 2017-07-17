@@ -1,11 +1,17 @@
-g {
+.frame {
 
-        stroke: black;
-        stroke-width: 10;
-        fill-opacity: 0;
+  stroke: black;
+  stroke-width: 10;
+  fill-opacity: 0;
 
 }
 
-.SpdtCluster {
-        stroke: pink;
+.mask {
+  fill: red;
+  opacity: .5;
+}
+
+.exclusion {
+  fill: blue;
+  opacity: .5;
 }

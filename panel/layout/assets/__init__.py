@@ -8,6 +8,13 @@ class Panel(object):
     # hardcoded lower-left-hand-corner origin in user coords
     X = 1000
     Y = 9000
+
+    # rectangle css style
+    STYLE = '''
+        fill: none;
+        stroke: black;
+        stroke-width: 15px;
+        '''
     
     superclusters.set_panel_offset(X, Y)
 
@@ -31,10 +38,15 @@ class Panel(object):
     def drawFrame(self, addable):
         addable.add(svgwrite.shapes.Rect(
             (self.X, self.Y-self.height), 
-            (self.fullwidth, self.height)))
+            (self.fullwidth, self.height),
+            class_='frame',
+            style=self.STYLE))
         addable.add(svgwrite.shapes.Rect(
-            (self.X + (self.fullwidth-self.inclusionwidth)/2, self.Y-self.height), 
-            (self.inclusionwidth, self.height)))
+            (self.X + (self.fullwidth-self.inclusionwidth)/2,
+                self.Y-self.height), 
+            (self.inclusionwidth, self.height),
+            class_='frame',
+            style=self.STYLE))
 
     def addSpdtSupercluster(self, x, y, N=None):
         '''

@@ -15,11 +15,9 @@ from assets import Panel
 WIDTH = 21
 HEIGHT = 14
 
-# Default style
 STYLE = '''
-    stroke: none;
-    fill-opacity: 1;
     fill: blue;
+    stroke: none;
 '''
 
 def get_panel():
@@ -38,28 +36,22 @@ def get_panel():
     return p
 
 
-##dwg = svgwrite.Drawing('test.svg', 
-##        size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
-##        profile='full',
-##        style=STYLE)
+## composite drawing. all layers, viewable in browser w/ external css
 
-dwg = svgwrite.Drawing('panel-final-revised-mask-fills.svg', 
+dwg = svgwrite.Drawing('panel-final-composite.svg', 
         size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
-        profile='full',
-        style=STYLE)
+        profile='full')
 
 dwg.viewbox(width=int(WIDTH*1000), height=int(HEIGHT*1000))
-
-##dwg.add_stylesheet('default.css', 'default')
+dwg.add_stylesheet('default.css', 'default')
 
 g = svgwrite.container.Group()
 
 p = get_panel()
 
-##p.drawFrame(g)
-##p.drawExclusionAreas(g)
-##p.drawMaskAreas(g)
-##p.drawBoundboxes(g)
+p.drawFrame(g)
+p.drawExclusionAreas(g)
+p.drawMaskAreas(g)
 p.drawLabels(g)
 
 dwg.add(g)
@@ -67,3 +59,25 @@ dwg.add(g)
 dwg.save(pretty=True)
 
 print p
+
+## drawing for illustrator, just frame and mask areas with document-specified
+## fill
+
+
+dwg = svgwrite.Drawing('panel-final-masks.svg', 
+        size=(WIDTH*svgwrite.inch, HEIGHT*svgwrite.inch),
+        profile='full',
+        style=STYLE)
+
+dwg.viewbox(width=int(WIDTH*1000), height=int(HEIGHT*1000))
+
+g = svgwrite.container.Group()
+
+p = get_panel()
+
+p.drawFrame(g)
+p.drawMaskAreas(g)
+
+dwg.add(g)
+
+dwg.save(pretty=True)
