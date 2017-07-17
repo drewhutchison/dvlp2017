@@ -81,3 +81,12 @@ class Keyswitch(Component):
 class Fuse(Component):
     r_exclude = 760/2
     r_mask = 760/2
+
+class Standoff(Component):
+    '''
+    #8 flathead countersunk screw protruding from front-side.
+    Exclusion area is knockout, mask area is edge of countersink.
+    Measurements are from https://www.guden.com/StaticHtml/Countersink/
+    '''
+    r_exclude = 187/2
+    r_mask = 320/2

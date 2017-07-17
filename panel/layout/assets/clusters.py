@@ -227,7 +227,7 @@ class VTiepointCluster(Cluster):
 
         self.components = [
             Jack(v_centerline, y + Jack.r_exclude),
-            Jack(v_centerline, y + Jack.r_exclude*5 + self.vpad*2)
+            Jack(v_centerline, y + Jack.r_exclude*3 + self.vpad*1)
         ]
 
 class LampCluster(Cluster):
@@ -253,3 +253,9 @@ class LampCluster(Cluster):
             (x, y - self.height),
             (Lamp.r_exclude*2, self.height)
         )
+
+class StandoffCluster(Cluster):
+
+    def __init__(self, y, xs):
+
+        self.components = [Standoff(x, y) for x in xs]

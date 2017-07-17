@@ -100,6 +100,10 @@ class Panel(object):
     def drawLabels(self, addable):
         for cluster in self.clusters:
             cluster.addLabels(addable)
+
+    def addStandoffs(self, y, xs):
+        self.clusters.append(clusters.StandoffCluster(self.Y - y,
+            [self.X + x for x in xs]))
     
 __all__ = [
     'Panel'
