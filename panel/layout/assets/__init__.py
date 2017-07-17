@@ -9,13 +9,6 @@ class Panel(object):
     X = 1000
     Y = 9000
 
-    # rectangle css style
-    STYLE = '''
-        fill: none;
-        stroke: black;
-        stroke-width: 15px;
-        '''
-    
     superclusters.set_panel_offset(X, Y)
 
     # hardcoded width figures
@@ -39,14 +32,12 @@ class Panel(object):
         addable.add(svgwrite.shapes.Rect(
             (self.X, self.Y-self.height), 
             (self.fullwidth, self.height),
-            class_='frame',
-            style=self.STYLE))
+            class_='frame'))
         addable.add(svgwrite.shapes.Rect(
             (self.X + (self.fullwidth-self.inclusionwidth)/2,
                 self.Y-self.height), 
             (self.inclusionwidth, self.height),
-            class_='frame',
-            style=self.STYLE))
+            class_='frame'))
 
     def addSpdtSupercluster(self, x, y, N=None):
         '''
