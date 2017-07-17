@@ -1,0 +1,29 @@
+
+line {
+  stroke: black;
+  stroke-width: .2px;
+}
+
+text {
+  font-size: 3pt;
+  font-family: Courier;
+  text-anchor: middle;
+}
+
+text.kerned {
+  font-family: "Berthold Akzidenz Grotesk";
+  text-anchor: start;
+  font-weight: normal;
+}
+
+g.strong {
+  font-weight: bold;
+}
+
+g.strong line {
+  stroke-width: .3px;
+}
+
+g.faded line {
+  stroke-opacity: .3;
+}

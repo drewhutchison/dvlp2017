@@ -17,7 +17,7 @@ h1, .vcenter {
 }
 
 h2 {
-  margin-left: 48pt;
+  /*margin-left: 48pt;*/
   font-size: 48pt;
 }
 
@@ -60,38 +60,81 @@ h2 {
 }
 
 .title h3 {
-  font-size: 2em;
-  font-family: Courier;
   margin: 5%;
   margin-top: 0;
-  font-weight: lighter;
-  color: blue;
-  text-decoration: underline;
 }
 
-/* Section intros */
+.title a, .title a:visited {
+  font-size: 1.5em;
+  font-family: Courier;
+  font-weight: lighter;
+  color: blue;
+}
 
-#s1 {
+/* timeline stuff */
+
+section.s1 {
   background-image: url("../assets/img/s1_bg.jpg");
   background-size: cover;
 }
 
-#s1 > div {
-  margin-left: 10%;
+section.s1 div {
   background-color: rgba(255,255,255,0.85);
 }
 
-#s1 h1 {
+section.s1 div.sectiontitle {
+  margin-left: 10%;
+}
+
+section.s1 h1 {
   text-align: left;
   margin-left: 1em;
   padding-top: .2em;
 }
 
+section.s1 div.timelinecontainer {
+  display: flex;
+  margin: 0 0 0 0;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+section.s1 div.timeline {
+  margin-left: 5%;
+  flex: 0 0 60%;
+}
+
+section.s1 div.timelinepicture {
+  margin-right: 5%;
+  flex: 0 1 20%;
+}
+
+div.timelinepicture img {
+  padding: 20px 20px 20px 20px;
+  max-width: 480px;
+  max-height: 480px;
+}
+
 /* before/after section */
 
-div.beforeafter {
+section.s2 {
+  background-image: url("../assets/img/s2_bg.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+section.s2 div {
+  background-color: rgba(255,255,255,0.85);
+}
+
+section.s2 div.sectiontitle {
+  display: inline-block;
+}
+
+section.s2 div.beforeafter {
   display: flex;
-  margin: 0 0 10% 10%;
+  margin: 0 1 10% 10%;
+  background-color: transparent;
 }
 
 div.beforepic {
