@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="14in" style="
+    fill: blue;
+    stroke: none;
+" version="1.1" viewBox="0,0,21000,14000" width="21in" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs/>
+  <g>
+    <rect class="frame" height="6969" width="19000" x="1000" y="2031"/>
+    <rect class="frame" height="6969" width="17500" x="1750" y="2031"/>
+    <circle class="mask Jack" cx="3275" cy="8515" id="R1.NC" r="295"/>
+    <circle class="mask Jack" cx="3275" cy="7645" id="R1.NO" r="295"/>
+    <circle class="mask Jack" cx="3275" cy="6775" id="R1.COM" r="295"/>
+    <circle class="mask Jack" cx="3275" cy="5905" id="R1" r="295"/>
+    <circle class="mask Jack" cx="4165" cy="8515" id="R2.NC" r="295"/>
+    <circle class="mask Jack" cx="4165" cy="7645" id="R2.NO" r="295"/>
+    <circle class="mask Jack" cx="4165" cy="6775" id="R2.COM" r="295"/>
+    <circle class="mask Jack" cx="4165" cy="5905" id="R2" r="295"/>
+    <circle class="mask Jack" cx="5055" cy="8515" id="R3.NC" r="295"/>
+    <circle class="mask Jack" cx="5055" cy="7645" id="R3.NO" r="295"/>
+    <circle class="mask Jack" cx="5055" cy="6775" id="R3.COM" r="295"/>
+    <circle class="mask Jack" cx="5055" cy="5905" id="R3" r="295"/>
+    <circle class="mask Jack" cx="5945" cy="8515" id="R4.NC" r="295"/>
+    <circle class="mask Jack" cx="5945" cy="7645" id="R4.NO" r="295"/>
+    <circle class="mask Jack" cx="5945" cy="6775" id="R4.COM" r="295"/>
+    <circle class="mask Jack" cx="5945" cy="5905" id="R4" r="295"/>
+    <circle class="mask Jack" cx="6835" cy="8515" id="R5.NC" r="295"/>
+    <circle class="mask Jack" cx="6835" cy="7645" id="R5.NO" r="295"/>
+    <circle class="mask Jack" cx="6835" cy="6775" id="R5.COM" r="295"/>
+    <circle class="mask Jack" cx="6835" cy="5905" id="R5" r="295"/>
+    <circle class="mask Jack" cx="7725" cy="8515" id="R6.NC" r="295"/>
+    <circle class="mask Jack" cx="7725" cy="7645" id="R6.NO" r="295"/>
+    <circle class="mask Jack" cx="7725" cy="6775" id="R6.COM" r="295"/>
+    <circle class="mask Jack" cx="7725" cy="5905" id="R6" r="295"/>
+    <circle class="mask Jack" cx="8615" cy="8515" id="R7.NC" r="295"/>
+    <circle class="mask Jack" cx="8615" cy="7645" id="R7.NO" r="295"/>
+    <circle class="mask Jack" cx="8615" cy="6775" id="R7.COM" r="295"/>
+    <circle class="mask Jack" cx="8615" cy="5905" id="R7" r="295"/>
+    <circle class="mask Jack" cx="9505" cy="8515" id="R8.NC" r="295"/>
+    <circle class="mask Jack" cx="9505" cy="7645" id="R8.NO" r="295"/>
+    <circle class="mask Jack" cx="9505" cy="6775" id="R8.COM" r="295"/>
+    <circle class="mask Jack" cx="9505" cy="5905" id="R8" r="295"/>
+    <circle class="mask Jack" cx="12285" cy="8515" id="R13.NC1" r="295"/>
+    <circle class="mask Jack" cx="12285" cy="7645" id="R13.NO1" r="295"/>
+    <circle class="mask Jack" cx="12285" cy="6775" id="R13.COM1" r="295"/>
+    <circle class="mask Jack" cx="13155" cy="8515" id="R13.NC2" r="295"/>
+    <circle class="mask Jack" cx="13155" cy="7645" id="R13.NO2" r="295"/>
+    <circle class="mask Jack" cx="13155" cy="6775" id="R13.COM2" r="295"/>
+    <circle class="mask Jack" cx="12720" cy="6005" id="R13" r="295"/>
+    <circle class="mask Jack" cx="14105" cy="8515" id="R14.NC1" r="295"/>
+    <circle class="mask Jack" cx="14105" cy="7645" id="R14.NO1" r="295"/>
+    <circle class="mask Jack" cx="14105" cy="6775" id="R14.COM1" r="295"/>
+    <circle class="mask Jack" cx="14975" cy="8515" id="R14.NC2" r="295"/>
+    <circle class="mask Jack" cx="14975" cy="7645" id="R14.NO2" r="295"/>
+    <circle class="mask Jack" cx="14975" cy="6775" id="R14.COM2" r="295"/>
+    <circle class="mask Jack" cx="14540" cy="6005" id="R14" r="295"/>
+    <circle class="mask Jack" cx="15925" cy="8515" id="R15.NC1" r="295"/>
+    <circle class="mask Jack" cx="15925" cy="7645" id="R15.NO1" r="295"/>
+    <circle class="mask Jack" cx="15925" cy="6775" id="R15.COM1" r="295"/>
+    <circle class="mask Jack" cx="16795" cy="8515" id="R15.NC2" r="295"/>
+    <circle class="mask Jack" cx="16795" cy="7645" id="R15.NO2" r="295"/>
+    <circle class="mask Jack" cx="16795" cy="6775" id="R15.COM2" r="295"/>
+    <circle class="mask Jack" cx="16360" cy="6005" id="R15" r="295"/>
+    <circle class="mask Jack" cx="17745" cy="8515" id="R16.NC1" r="295"/>
+    <circle class="mask Jack" cx="17745" cy="7645" id="R16.NO1" r="295"/>
+    <circle class="mask Jack" cx="17745" cy="6775" id="R16.COM1" r="295"/>
+    <circle class="mask Jack" cx="18615" cy="8515" id="R16.NC2" r="295"/>
+    <circle class="mask Jack" cx="18615" cy="7645" id="R16.NO2" r="295"/>
+    <circle class="mask Jack" cx="18615" cy="6775" id="R16.COM2" r="295"/>
+    <circle class="mask Jack" cx="18180" cy="6005" id="R16" r="295"/>
+    <circle class="mask Jack" cx="12285" cy="5095" id="R9.NC1" r="295"/>
+    <circle class="mask Jack" cx="12285" cy="4225" id="R9.NO1" r="295"/>
+    <circle class="mask Jack" cx="12285" cy="3355" id="R9.COM1" r="295"/>
+    <circle class="mask Jack" cx="13155" cy="5095" id="R9.NC2" r="295"/>
+    <circle class="mask Jack" cx="13155" cy="4225" id="R9.NO2" r="295"/>
+    <circle class="mask Jack" cx="13155" cy="3355" id="R9.COM2" r="295"/>
+    <circle class="mask Jack" cx="12720" cy="2585" id="R9" r="295"/>
+    <circle class="mask Jack" cx="14105" cy="5095" id="R10.NC1" r="295"/>
+    <circle class="mask Jack" cx="14105" cy="4225" id="R10.NO1" r="295"/>
+    <circle class="mask Jack" cx="14105" cy="3355" id="R10.COM1" r="295"/>
+    <circle class="mask Jack" cx="14975" cy="5095" id="R10.NC2" r="295"/>
+    <circle class="mask Jack" cx="14975" cy="4225" id="R10.NO2" r="295"/>
+    <circle class="mask Jack" cx="14975" cy="3355" id="R10.COM2" r="295"/>
+    <circle class="mask Jack" cx="14540" cy="2585" id="R10" r="295"/>
+    <circle class="mask Jack" cx="15925" cy="5095" id="R11.NC1" r="295"/>
+    <circle class="mask Jack" cx="15925" cy="4225" id="R11.NO1" r="295"/>
+    <circle class="mask Jack" cx="15925" cy="3355" id="R11.COM1" r="295"/>
+    <circle class="mask Jack" cx="16795" cy="5095" id="R11.NC2" r="295"/>
+    <circle class="mask Jack" cx="16795" cy="4225" id="R11.NO2" r="295"/>
+    <circle class="mask Jack" cx="16795" cy="3355" id="R11.COM2" r="295"/>
+    <circle class="mask Jack" cx="16360" cy="2585" id="R11" r="295"/>
+    <circle class="mask Jack" cx="17745" cy="5095" id="R12.NC1" r="295"/>
+    <circle class="mask Jack" cx="17745" cy="4225" id="R12.NO1" r="295"/>
+    <circle class="mask Jack" cx="17745" cy="3355" id="R12.COM1" r="295"/>
+    <circle class="mask Jack" cx="18615" cy="5095" id="R12.NC2" r="295"/>
+    <circle class="mask Jack" cx="18615" cy="4225" id="R12.NO2" r="295"/>
+    <circle class="mask Jack" cx="18615" cy="3355" id="R12.COM2" r="295"/>
+    <circle class="mask Jack" cx="18180" cy="2585" id="R12" r="295"/>
+    <circle class="mask Fuse" cx="2500" cy="4920" id="unnamed" r="380"/>
+    <circle class="mask Lamp" cx="2500" cy="3960" id="pilot" r="407"/>
+    <circle class="mask Keyswitch" cx="2500" cy="2800" id="power" r="434"/>
+    <circle class="mask Jack" cx="3610" cy="4945" id="S1.NC" r="295"/>
+    <circle class="mask Jack" cx="3610" cy="4075" id="S1.NO" r="295"/>
+    <circle class="mask Jack" cx="3610" cy="3205" id="S1.COM" r="295"/>
+    <circle class="mask Switch" cx="3610" cy="2461" r="157"/>
+    <circle class="mask Jack" cx="4580" cy="4945" id="S2.NC" r="295"/>
+    <circle class="mask Jack" cx="4580" cy="4075" id="S2.NO" r="295"/>
+    <circle class="mask Jack" cx="4580" cy="3205" id="S2.COM" r="295"/>
+    <circle class="mask Switch" cx="4580" cy="2461" r="157"/>
+    <circle class="mask Jack" cx="5550" cy="4945" id="S3.NC" r="295"/>
+    <circle class="mask Jack" cx="5550" cy="4075" id="S3.NO" r="295"/>
+    <circle class="mask Jack" cx="5550" cy="3205" id="S3.COM" r="295"/>
+    <circle class="mask Switch" cx="5550" cy="2461" r="157"/>
+    <circle class="mask Jack" cx="6520" cy="4945" id="S4.NC" r="295"/>
+    <circle class="mask Jack" cx="6520" cy="4075" id="S4.NO" r="295"/>
+    <circle class="mask Jack" cx="6520" cy="3205" id="S4.COM" r="295"/>
+    <circle class="mask Switch" cx="6520" cy="2461" r="157"/>
+    <circle class="mask Lamp" cx="7635" cy="2650" id="unnamed" r="407"/>
+    <circle class="mask Jack" cx="7635" cy="3615" id="unnamed" r="295"/>
+    <circle class="mask Lamp" cx="8845" cy="2650" id="unnamed" r="407"/>
+    <circle class="mask Jack" cx="8845" cy="3615" id="unnamed" r="295"/>
+    <circle class="mask Lamp" cx="10055" cy="2650" id="unnamed" r="407"/>
+    <circle class="mask Jack" cx="10055" cy="3615" id="unnamed" r="295"/>
+    <circle class="mask Lamp" cx="11265" cy="2650" id="unnamed" r="407"/>
+    <circle class="mask Jack" cx="11265" cy="3615" id="unnamed" r="295"/>
+    <circle class="mask Jack" cx="10460" cy="8515" id="TR1.NC1" r="295"/>
+    <circle class="mask Jack" cx="10460" cy="7645" id="TR1.NO1" r="295"/>
+    <circle class="mask Jack" cx="10460" cy="6775" id="TR1.COM1" r="295"/>
+    <circle class="mask Jack" cx="11330" cy="8515" id="TR1.NC2" r="295"/>
+    <circle class="mask Jack" cx="11330" cy="7645" id="TR1.NO2" r="295"/>
+    <circle class="mask Jack" cx="11330" cy="6775" id="TR1.COM2" r="295"/>
+    <circle class="mask Jack" cx="10895" cy="6005" id="TR1" r="295"/>
+    <circle class="mask Jack" cx="2369" cy="7210" id="unnamed" r="295"/>
+    <circle class="mask Jack" cx="2369" cy="8080" id="unnamed" r="295"/>
+    <circle class="mask Standoff" cx="2250" cy="6005" id="unnamed" r="160"/>
+    <circle class="mask Standoff" cx="10250" cy="6005" id="unnamed" r="160"/>
+    <circle class="mask Standoff" cx="18750" cy="6005" id="unnamed" r="160"/>
+  </g>
+</svg>
