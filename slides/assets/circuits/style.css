@@ -1,0 +1,16 @@
+svg {
+  stroke: black;
+  stroke-width: 2;
+  fill: none;
+}
+
+text {
+  font-family: Courier New;
+  font-size: 15px;
+  stroke: none;
+  fill: black;
+}
+
+.thick {
+  stroke-width: 3;
+}

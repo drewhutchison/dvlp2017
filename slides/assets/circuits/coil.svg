@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    height="100" 
+    width="500"
+    id="tile">
+  <line x1="0" y1="50" x2="33" y2="50" />
+  <line x1="67" y1="50" x2="100" y2="50" />
+  <path d="M 45 25
+           A 35 35 0 0 0 45 75
+          "
+        class="thick" />
+  <path d="M 55 25
+           A 35 35 0 0 1 55 75
+          "
+        class="thick" />
+  <text x="65" y="20">R9</text>
+</svg>

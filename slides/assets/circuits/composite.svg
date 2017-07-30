@@ -1,0 +1,16 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    height="100" 
+    width="1000">
+    <use x="0" y="0" href="left.svg#tile" />
+    <use x="100" y="0" href="cnc.svg#tile" />
+    <use x="200" y="0" href="cno.svg#tile" />
+    <use x="300" y="0" href="lamp.svg#tile" />
+    <use x="400" y="0" href="hstraight.svg#tile" />
+    <use x="500" y="0" href="sno.svg#tile" />
+    <use x="600" y="0" href="snc.svg#tile" />
+    <use x="700" y="0" href="coil.svg#tile" />
+    <use x="800" y="0" href="right.svg#tile" />
+</svg>

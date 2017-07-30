@@ -1,0 +1,17 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    height="100" 
+    width="500"
+    id="tile">
+  <path d="M 0 50
+           L 45 50
+           A 25 20 0 0 0 50 25
+           M 100 50
+           L 55 50
+           A 25 20 0 0 1 50 25
+          " />
+  <circle cx="50" cy="38" r="20" class="thick" />
+  <text x="68" y="20">L1</text>
+</svg>
