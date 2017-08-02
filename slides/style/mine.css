@@ -9,7 +9,9 @@ section.slide {
 h1 {
   font-stretch: expanded;
   font-weight: bold;
-  font-size: 4.5em;
+  font-size: 3.5vw;
+  padding: 1vw;
+  padding-bottom: .2vw;
 }
 
 h1, .vcenter {
@@ -17,8 +19,7 @@ h1, .vcenter {
 }
 
 h2 {
-  /*margin-left: 48pt;*/
-  font-size: 48pt;
+  font-size: 2.8vw;
 }
 
 /* title-slide specific stuff */
@@ -30,42 +31,39 @@ h2 {
 
 .title div {
     background-color: rgba(255,255,255,0.85);
-    width: 70%;
+    width: 55%;
     float: right;
-    margin: 10%;
     text-align: right;
+    margin: 10%;
+    padding: 3%;
 }
 
 .title h1 {
-  margin: 5%;
-  margin-bottom: 0%;
   text-align: right;
+  margin-top: 0px;
 }
 
 .title hr {
   width: 40%;
-  border-width: .15em;
+  border-width: .15vw;
   border-style: solid;
   color: black;
-  margin-right: 13em;
-  margin-top: 3em;
-  margin-bottom: 4em;
+  margin-right: 8vw;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
 }
 
 .title h2 {
-  font-size: 2.5em;
-  margin: 1%;
-  margin-right: 5%;
+  font-size: 2vw;
   font-weight: lighter;
 }
 
 .title h3 {
-  margin: 5%;
-  margin-top: 0;
+  font-size: 1.6vw;
+  margin-bottom: 0px;
 }
 
 .title a, .title a:visited {
-  font-size: 1.5em;
   font-family: Courier;
   font-weight: lighter;
   color: blue;
@@ -88,8 +86,7 @@ section.s1 div.sectiontitle {
 
 section.s1 h1 {
   text-align: left;
-  margin-left: 1em;
-  padding-top: .2em;
+  margin-left: 1vw;
 }
 
 section.s1 div.timelinecontainer {
