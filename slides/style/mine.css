@@ -22,6 +22,10 @@ h2 {
   font-size: 2.8vw;
 }
 
+h3 {
+  font-size: 1.6vw;
+}
+
 /* title-slide specific stuff */
 
 .title {
@@ -59,7 +63,6 @@ h2 {
 }
 
 .title h3 {
-  font-size: 1.6vw;
   margin-bottom: 0px;
 }
 
@@ -89,27 +92,23 @@ section.s1 h1 {
   margin-left: 1vw;
 }
 
-section.s1 div.timelinecontainer {
-  display: flex;
-  margin: 0 0 0 0;
-  justify-content: space-between;
-  background-color: transparent;
-}
-
 section.s1 div.timeline {
-  margin-left: 5%;
-  flex: 0 0 60%;
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
+  width: 50vw;
 }
 
 section.s1 div.timelinepicture {
-  margin-right: 5%;
-  flex: 0 1 20%;
+  position: absolute;
+  top: 10vh;
+  right: 8vw;
 }
 
 div.timelinepicture img {
-  padding: 20px 20px 20px 20px;
-  max-width: 480px;
-  max-height: 480px;
+  padding: 5%;
+  width: 30vw;
+  max-height: 50vh;
 }
 
 /* before/after section */
@@ -120,28 +119,29 @@ section.s2 {
   text-align: center;
 }
 
-section.s2 div {
+section.s2 div.sectiontitle, section.s2 div.tbg {
   background-color: rgba(255,255,255,0.85);
 }
 
-section.s2 div.sectiontitle {
-  display: inline-block;
+div.padded {
+  padding: 0.5vw;
 }
 
-section.s2 div.beforeafter {
-  display: flex;
-  margin: 0 1 10% 10%;
-  background-color: transparent;
+div.beforepic, div.afterpic {
+  position: absolute;
+  width: 42vw;
+  top: 20vh;
+  height: 10vh;
 }
 
 div.beforepic {
-  flex: 0 0 50%;
+  left: 5vw;
 }
 
 div.afterpic {
-  flex: 1;
+  right: 5vw;
 }
 
 div.beforeafter img {
-  width: 80%;
+  height: 30vh;
 }
