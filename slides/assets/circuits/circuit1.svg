@@ -5,12 +5,11 @@
     height="100" 
     width="1000">
     <use x="0" y="0" href="tiles/left.svg#tile" />
-    <use x="100" y="0" href="tiles/cnc.svg#tile" />
-    <use x="200" y="0" href="tiles/cno.svg#tile" />
+    <use x="100" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="200" y="0" href="tiles/hstraight.svg#tile" />
     <use x="300" y="0" href="tiles/lamp.svg#tile" />
+    <text x="365" y="20">L1</text>
     <use x="400" y="0" href="tiles/hstraight.svg#tile" />
-    <use x="500" y="0" href="tiles/sno.svg#tile" />
-    <use x="600" y="0" href="tiles/snc.svg#tile" />
-    <use x="700" y="0" href="tiles/coil.svg#tile" />
-    <use x="800" y="0" href="tiles/right.svg#tile" />
+    <use x="500" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="600" y="0" href="tiles/right.svg#tile" />
 </svg>

@@ -1,4 +1,4 @@
-<?xml-stylesheet type="text/css" href="style.css"?>
+<?xml-stylesheet type="text/css" href="../style.css"?>
 
 <svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -10,5 +10,4 @@
   <line x1="43" y1="20" x2="43" y2="80" class="thick" />
   <line x1="57" y1="20" x2="57" y2="80" class="thick" />
   <line x1="35" y1="75" x2="65" y2="25" class="thick" />
-  <text x="65" y="20">R9.NC1</text>
 </svg>
