@@ -1,0 +1,69 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    height="700" 
+    width="1000">
+    <use x="0" y="0" href="tiles/left.svg#tile" />
+    <use x="100" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="200" y="0" href="tiles/sno.svg#tile" />
+    <text x="265" y="20">S1.NO</text>
+    <use x="300" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="400" y="0" href="tiles/dtee.svg#tile" />
+    <use x="500" y="0" href="tiles/coil.svg#tile" />
+    <text x="565" y="20">R1</text>
+    <use x="600" y="0" href="tiles/right.svg#tile" />
+
+    <use x="0" y="100" href="tiles/vstraight.svg#tile" />
+    <use x="400" y="100" href="tiles/relbow.svg#tile" />
+    <use x="500" y="100" href="tiles/coil.svg#tile" />
+    <text x="565" y="120">R9</text>
+    <use x="600" y="100" href="tiles/right.svg#tile" />
+
+    <use x="0" y="200" href="tiles/left.svg#tile" />
+    <use x="100" y="200" href="tiles/hstraight.svg#tile" />
+    <use x="200" y="200" href="tiles/sno.svg#tile" />
+    <text x="265" y="220">S2.NO</text>
+    <use x="300" y="200" href="tiles/hstraight.svg#tile" />
+    <use x="400" y="200" href="tiles/dtee.svg#tile" />
+    <use x="500" y="200" href="tiles/coil.svg#tile" />
+    <text x="565" y="220">R2</text>
+    <use x="600" y="200" href="tiles/right.svg#tile" />
+
+    <use x="0" y="300" href="tiles/vstraight.svg#tile" />
+    <use x="400" y="300" href="tiles/relbow.svg#tile" />
+    <use x="500" y="300" href="tiles/coil.svg#tile" />
+    <text x="565" y="320">R10</text>
+    <use x="600" y="300" href="tiles/right.svg#tile" />
+
+    <use x="0" y="400" href="tiles/left.svg#tile" />
+    <use x="100" y="400" href="tiles/cno.svg#tile" />
+    <text x="165" y="420">R9.NO</text>
+    <use x="200" y="400" href="tiles/cnc.svg#tile" />
+    <text x="265" y="420">R10.NC</text>
+    <use x="300" y="400" href="tiles/dtee.svg#tile" />
+    <use x="400" y="400" href="tiles/hstraight.svg#tile" />
+    <use x="500" y="400" href="tiles/lamp.svg#tile" />
+    <text x="568" y="420">L1</text>
+    <use x="600" y="400" href="tiles/right.svg#tile" />
+
+    <use x="0" y="500" href="tiles/left.svg#tile" />
+    <use x="100" y="500" href="tiles/cnc.svg#tile" />
+    <text x="165" y="520">R9.NC</text>
+    <use x="200" y="500" href="tiles/cno.svg#tile" />
+    <text x="265" y="520">R10.NO</text>
+    <use x="300" y="500" href="tiles/lelbow.svg#tile" />
+    <use x="600" y="500" href="tiles/vstraight.svg#tile" />
+
+    <use x="0" y="600" href="tiles/left.svg#tile" />
+    <use x="100" y="600" href="tiles/cno.svg#tile" />
+    <text x="165" y="620">R1.NO</text>
+    <use x="200" y="600" href="tiles/cno.svg#tile" />
+    <text x="265" y="620">R2.NO</text>
+    <use x="300" y="600" href="tiles/hstraight.svg#tile" />
+    <use x="400" y="600" href="tiles/hstraight.svg#tile" />
+    <use x="500" y="600" href="tiles/lamp.svg#tile" />
+    <text x="568" y="620">L2</text>
+    <use x="600" y="600" href="tiles/right.svg#tile" />
+
+</svg>

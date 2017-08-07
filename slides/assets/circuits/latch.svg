@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    height="200" 
+    width="1000">
+    <use x="0" y="0" href="tiles/left.svg#tile" />
+    <use x="100" y="0" href="tiles/sno.svg#tile" />
+    <text x="165" y="20">S1.NO</text>
+    <use x="200" y="0" href="tiles/dtee.svg#tile" />
+    <use x="300" y="0" href="tiles/snc.svg#tile" />
+    <text x="365" y="20">S2.NC</text>
+    <use x="400" y="0" href="tiles/dtee.svg#tile" />
+    <use x="500" y="0" href="tiles/lamp.svg#tile" />
+    <text x="568" y="20">L1</text>
+    <use x="600" y="0" href="tiles/right.svg#tile" />
+
+    <use x="0" y="100" href="tiles/left.svg#tile" />
+    <use x="100" y="100" href="tiles/cno.svg#tile" />
+    <text x="165" y="120">R1.NO</text>
+    <use x="200" y="100" href="tiles/lelbow.svg#tile" />
+    
+    <use x="400" y="100" href="tiles/relbow.svg#tile" />
+    <use x="500" y="100" href="tiles/coil.svg#tile" />
+    <text x="565" y="120">R1</text>
+    <use x="600" y="100" href="tiles/right.svg#tile" />
+</svg>
