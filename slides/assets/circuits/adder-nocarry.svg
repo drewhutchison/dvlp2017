@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    height="700" 
+    width="1000">
+    <use x="0" y="0" href="tiles/left.svg#tile" />
+    <use x="100" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="200" y="0" href="tiles/sno.svg#tile" />
+    <text x="265" y="20">S1.NO</text>
+    <use x="300" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="400" y="0" href="tiles/hstraight.svg#tile" />
+    <use x="500" y="0" href="tiles/coil.svg#tile" />
+    <text x="565" y="20">R9</text>
+    <use x="600" y="0" href="tiles/right.svg#tile" />
+
+    <use x="0" y="100" href="tiles/left.svg#tile" />
+    <use x="100" y="100" href="tiles/hstraight.svg#tile" />
+    <use x="200" y="100" href="tiles/sno.svg#tile" />
+    <text x="265" y="120">S2.NO</text>
+    <use x="300" y="100" href="tiles/hstraight.svg#tile" />
+    <use x="400" y="100" href="tiles/hstraight.svg#tile" />
+    <use x="500" y="100" href="tiles/coil.svg#tile" />
+    <text x="565" y="120">R10</text>
+    <use x="600" y="100" href="tiles/right.svg#tile" />
+
+    <use x="0" y="200" href="tiles/left.svg#tile" />
+    <use x="100" y="200" href="tiles/cno.svg#tile" />
+    <text x="165" y="220">R9.NO1</text>
+    <use x="200" y="200" href="tiles/cnc.svg#tile" />
+    <text x="265" y="220">R10.NC1</text>
+    <use x="300" y="200" href="tiles/dtee.svg#tile" />
+    <use x="400" y="200" href="tiles/hstraight.svg#tile" />
+    <use x="500" y="200" href="tiles/lamp.svg#tile" />
+    <text x="568" y="220">L1</text>
+    <use x="600" y="200" href="tiles/right.svg#tile" />
+
+    <use x="0" y="300" href="tiles/left.svg#tile" />
+    <use x="100" y="300" href="tiles/cnc.svg#tile" />
+    <text x="165" y="320">R9.NC2</text>
+    <use x="200" y="300" href="tiles/cno.svg#tile" />
+    <text x="265" y="320">R10.NO2</text>
+    <use x="300" y="300" href="tiles/lelbow.svg#tile" />
+    <use x="600" y="300" href="tiles/vstraight.svg#tile" />
+
+</svg>
