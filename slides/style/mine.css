@@ -188,8 +188,23 @@ section.s4 div {
 
 section.s4 div.list-container {
   padding: 5vh;
-  margin: 10vh;
-  width: 40%;
+  width: 35%;
+  left: 5vw;
+  position: absolute;
+}
+
+section.s4 div.img-container {
+  padding: 5vh;
+  width: 35%;
+  right: 5vw;
+  position: absolute;
+}
+
+section.s4 div.img-container img {
+  display: block;
+  margin: auto;
+  max-height: 60vh;
+  max-width: 100%;
 }
 
 section.s4 li {
