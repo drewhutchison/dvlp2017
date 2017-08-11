@@ -224,24 +224,126 @@
       </div>
     </section>
 
-<!-- -- Circuits ------------------------------------------------------- -->
-
-    <section class="slide s3">
+    <section class="slide s2">
       <div class="sectiontitle">
         <h1>So, how?</h1>
       </div>
     </section>
 
+<!-- -- Circuits ------------------------------------------------------- -->
+
     <section class="slide s3">
       <div class="sectiontitle">
-        <h1>First (real) circuit</h1>
+        <h1>Ladder Logic</h1>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Ladder Logic</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit1.svg" type="image/svg+xml">
+        </object>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Ladder Logic</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit1.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Left rail is +12V</li>
+          <li>Right rail is 0V</li>
+          <li>L1 is a lamp</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Ladder Logic</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit1.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/circuit1.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Left rail is +12V</li>
+          <li>Right rail is 0V</li>
+          <li>L1 is a lamp</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Switches</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit2.svg" type="image/svg+xml">
+        </object>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Switches</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit2.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>S1 contols current through L1</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Switches</h1>
       </div>
       <div class="circuit-container">
         <object data="assets/circuits/circuit2.svg" type="image/svg+xml">
         </object>
       </div>
       <div class="panel-container">
-        <img src="assets/panels/blank.png" />
+        <img src="assets/panels/circuit2.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>S1 contols current through L1</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Switches</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit2.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/circuit2-normalized.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>S1 contols current through L1</li>
+          <li>Switch COM terminals are normalized</li>
+        </ul>
       </div>
     </section>
 
@@ -257,6 +359,40 @@
 
     <section class="slide s3">
       <div class="sectiontitle">
+        <h1>Series switches</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit3.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Both switches must be closed to power L1</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Series switches</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit3.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/circuit3.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Both switches must be closed to power L1</li>
+          <li class="slide">This is a boolean AND</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
         <h1>Parallel switches</h1>
       </div>
       <div class="circuit-container">
@@ -267,11 +403,203 @@
 
     <section class="slide s3">
       <div class="sectiontitle">
-        <h1>bigass circuit</h1>
+        <h1>Parallel switches</h1>
       </div>
       <div class="circuit-container">
-        <object data="assets/circuits/adder-withcarry.svg" type="image/svg+xml">
+        <object data="assets/circuits/circuit4.svg" type="image/svg+xml">
         </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Closing either switch powers L1</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Parallel switches</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit4.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/circuit4.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Closing either switch powers L1</li>
+          <li class="slide">This is a boolean OR</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Normally-closed switch</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit5.svg" type="image/svg+xml">
+        </object>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Normally-closed switch</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit5.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Actuating switch <em>disconnects</em> L1</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Normally-closed switch</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit5.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/circuit5.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>Actuating switch <em>disconnects</em> L1</li>
+          <li class="slide">This is a boolean NOT</li>
+          <li class="slide">"NO" == "normally open", "NC"== "normally closed"</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Relays</h1>
+      </div>
+    </section>
+    
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Relays</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit6.svg" type="image/svg+xml">
+        </object>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Relays</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit6.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>() is the relay coil</li>
+          <li class="slide">|| is the relay contact</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Relays</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit6-thirdrung.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>() is the relay coil</li>
+          <li>|| is the relay contact</li>
+          <li>We have normally-closed contacts also</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>Relays</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/circuit6-thirdrung.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/circuit6.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>() is the relay coil</li>
+          <li>|| is the relay contact</li>
+          <li>We have normally-closed contacts also</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>The half-adder</h1>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>The half-adder</h1>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>0+0=0</li>
+          <li class="slide">0+1=1</li>
+          <li class="slide">1+0=1</li>
+          <li class="slide">1+1=0 ??</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>The half-adder</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/adder-nocarry.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/adder.png" />
+      </div>
+      <div class="descr">
+        <ul>
+          <li>0+0=0</li>
+          <li>0+1=1</li>
+          <li>1+0=1</li>
+          <li>1+1=0 ??</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>The latch</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/latch.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="panel-container">
+        <img src="assets/panels/latch.png" />
       </div>
     </section>
 

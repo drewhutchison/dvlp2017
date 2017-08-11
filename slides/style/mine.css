@@ -181,6 +181,13 @@ section.s3 div.panel-container img {
   max-width: 100%;
 }
 
+section.s3 div.descr {
+  position: absolute;
+  right: 5%;
+  top:25%;
+  padding: 2.5vh;
+}
+
 section.s3 h1 {
   text-align: left;
   margin-left: 1vw;
