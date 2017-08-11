@@ -108,7 +108,6 @@ section.s1 div.timelinepicture {
 div.timelinepicture img {
   padding: 5%;
   max-width: 30vw;
-  max-height: 50vh;
 }
 
 /* before/after section */
@@ -143,7 +142,7 @@ div.afterpic {
 }
 
 div.beforeafter img {
-  height: 30vh;
+  height: 35vw;
 }
 
 /* circuits section */
