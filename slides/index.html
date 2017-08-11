@@ -561,10 +561,10 @@
       </div>
       <div class="descr">
         <ul>
-          <li>0+0=0</li>
-          <li class="slide">0+1=1</li>
-          <li class="slide">1+0=1</li>
-          <li class="slide">1+1=0 ??</li>
+          <li>0+0 = 0</li>
+          <li class="slide">0+1 = 1</li>
+          <li class="slide">1+0 = 1</li>
+          <li class="slide">1+1 = 0 ??</li>
         </ul>
       </div>
     </section>
@@ -582,10 +582,28 @@
       </div>
       <div class="descr">
         <ul>
-          <li>0+0=0</li>
-          <li>0+1=1</li>
-          <li>1+0=1</li>
-          <li>1+1=0 ??</li>
+          <li>0+0 = 0</li>
+          <li>0+1 = 1</li>
+          <li>1+0 = 1</li>
+          <li>1+1 = 0 ??</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide s3">
+      <div class="sectiontitle">
+        <h1>The half-adder</h1>
+      </div>
+      <div class="circuit-container">
+        <object data="assets/circuits/adder-withcarry.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="descr">
+        <ul>
+          <li>0+0 = 0</li>
+          <li>0+1 = 1</li>
+          <li>1+0 = 1</li>
+          <li>1+1 = 10</li>
         </ul>
       </div>
     </section>
@@ -730,6 +748,8 @@
       </div>
     </section>
 
+    <section class="slide" style="background: black;">
+    </section>
 
     <!-- End slides. -->
 
@@ -769,7 +789,8 @@
   $(function() {
     $.deck('.slide',
         {touch: {
-            doubletapWindow: 0
+            doubletapWindow: 0,
+            swipeDirection: false
     }});
   });
 </script>
