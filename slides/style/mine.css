@@ -107,7 +107,7 @@ section.s1 div.timelinepicture {
 
 div.timelinepicture img {
   padding: 5%;
-  width: 30vw;
+  max-width: 30vw;
   max-height: 50vh;
 }
 
