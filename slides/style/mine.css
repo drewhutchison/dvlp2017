@@ -170,6 +170,17 @@ section.s3 div.circuit-container object {
   width: 100%;
 }
 
+section.s3 div.panel-container {
+  padding: 2.5vh;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 35%;
+}
+
+section.s3 div.panel-container img {
+  max-width: 100%;
+}
+
 section.s3 h1 {
   text-align: left;
   margin-left: 1vw;

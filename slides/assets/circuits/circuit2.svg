@@ -85,13 +85,13 @@
         <line x1="50" y1="0" x2="50" y2="100" class="thick" />
       </g>
     </defs>
-    <use x="0" y="0" href="#left" />
-    <use x="100" y="0" href="#sno" />
+    <use x="0" y="0" xlink:href="#left" />
+    <use x="100" y="0" xlink:href="#sno" />
     <text x="165" y="20">S1.NO</text>
-    <use x="200" y="0" href="#hstraight" />
-    <use x="300" y="0" href="#hstraight" />
-    <use x="400" y="0" href="#hstraight" />
-    <use x="500" y="0" href="#lamp" />
+    <use x="200" y="0" xlink:href="#hstraight" />
+    <use x="300" y="0" xlink:href="#hstraight" />
+    <use x="400" y="0" xlink:href="#hstraight" />
+    <use x="500" y="0" xlink:href="#lamp" />
     <text x="568" y="20">L1</text>
-    <use x="600" y="0" href="#right" />
+    <use x="600" y="0" xlink:href="#right" />
 </svg>
