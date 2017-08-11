@@ -85,33 +85,33 @@
         <line x1="50" y1="0" x2="50" y2="100" class="thick" />
       </g>
     </defs>
-    <use x="0" y="0" xlink:href="tiles/left.svg#tile" />
-    <use x="100" y="0" xlink:href="tiles/sno.svg#tile" />
+    <use x="0" y="0" xlink:href="#left" />
+    <use x="100" y="0" xlink:href="#sno" />
     <text x="165" y="20">S1.NO</text>
-    <use x="200" y="0" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="300" y="0" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="400" y="0" xlink:href="tiles/coil.svg#tile" />
+    <use x="200" y="0" xlink:href="#hstraight" />
+    <use x="300" y="0" xlink:href="#hstraight" />
+    <use x="400" y="0" xlink:href="#coil" />
     <text x="465" y="20">R1</text>
-    <use x="500" y="0" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="600" y="0" xlink:href="tiles/right.svg#tile" />
+    <use x="500" y="0" xlink:href="#hstraight" />
+    <use x="600" y="0" xlink:href="#right" />
 
-    <use x="0" y="100" xlink:href="tiles/left.svg#tile" />
-    <use x="100" y="100" xlink:href="tiles/cno.svg#tile" />
+    <use x="0" y="100" xlink:href="#left" />
+    <use x="100" y="100" xlink:href="#cno" />
     <text x="165" y="120">R1.NO</text>
-    <use x="200" y="100" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="300" y="100" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="400" y="100" xlink:href="tiles/lamp.svg#tile" />
+    <use x="200" y="100" xlink:href="#hstraight" />
+    <use x="300" y="100" xlink:href="#hstraight" />
+    <use x="400" y="100" xlink:href="#lamp" />
     <text x="468" y="120">L1</text>
-    <use x="500" y="100" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="600" y="100" xlink:href="tiles/right.svg#tile" />
+    <use x="500" y="100" xlink:href="#hstraight" />
+    <use x="600" y="100" xlink:href="#right" />
 
-    <use x="0" y="200" xlink:href="tiles/left.svg#tile" />
-    <use x="100" y="200" xlink:href="tiles/cnc.svg#tile" />
+    <use x="0" y="200" xlink:href="#left" />
+    <use x="100" y="200" xlink:href="#cnc" />
     <text x="165" y="220">R1.NC</text>
-    <use x="200" y="200" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="300" y="200" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="400" y="200" xlink:href="tiles/lamp.svg#tile" />
+    <use x="200" y="200" xlink:href="#hstraight" />
+    <use x="300" y="200" xlink:href="#hstraight" />
+    <use x="400" y="200" xlink:href="#lamp" />
     <text x="468" y="220">L2</text>
-    <use x="500" y="200" xlink:href="tiles/hstraight.svg#tile" />
-    <use x="600" y="200" xlink:href="tiles/right.svg#tile" />
+    <use x="500" y="200" xlink:href="#hstraight" />
+    <use x="600" y="200" xlink:href="#right" />
 </svg>
